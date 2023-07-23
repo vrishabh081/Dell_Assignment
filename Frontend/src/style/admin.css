@@ -1,0 +1,21 @@
+#admin-panel-wrapper>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 20rem;
+    align-items: center;
+}
+#admin-panel-wrapper>div:nth-child(2){
+    width: 40rem;
+    margin: auto;
+}
+#admin-panel-wrapper>div:nth-child(2)>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 40rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem 0 1rem 0;
+    padding: 1rem;
+    margin: 1rem 0;
+}

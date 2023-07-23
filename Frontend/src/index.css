@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary-color: rgb(7, 7, 82);  
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(219, 219, 219, 0.646);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1, h2, h3, label, text, p, a{
+  color: var(--primary-color);
+}
+
+#form>div>label{
+  display: block;
+  margin: auto;
+}
+#form>div span{
+  text-decoration: underline;
+}
+ion-icon{
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
