@@ -1,1 +1,1 @@
-export const serverName = "http://localhost:8000";
+export const serverName = "https://vast-red-raven-hat.cyclic.app/";
