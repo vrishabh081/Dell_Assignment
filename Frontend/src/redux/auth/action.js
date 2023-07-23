@@ -7,11 +7,9 @@ export const signUpFun = (payload) => (dispatch) => {
     dispatch({type: types.SIGN_UP_REQUEST})
     return axios.post(`${serverName}/api/v1/signup`, payload)
             .then((res)=>{
-                console.log(res.data)
                 dispatch({type: types.SIGN_UP_SUCCESS, signup: res.data})
             })
             .catch((err)=>{
-                console.log(err.response.data)
                 dispatch({type: types.SIGN_UP_ERROR, signup: err.response.data})
             })
 }
@@ -22,11 +20,9 @@ export const logInFun = (payload) => (dispatch) => {
     dispatch({type: types.LOG_IN_REQUEST})
     return axios.post(`${serverName}/api/v1/login`, payload)
             .then((res)=>{
-                console.log(res.data)
                 dispatch({type: types.LOG_IN_SUCCESS, login: res.data})
             })
             .catch((err)=>{
-                console.log(err.response.data)
                 dispatch({type: types.LOG_IN_ERROR, login: err.response.data})
             })
 }

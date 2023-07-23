@@ -44,10 +44,9 @@ const AdminPanel = () => {
                         {
                             partsData ?
                                 partsData?.parts?.map((el) => <div key={el._id}>
-                                    <img src={dellParts} alt="" />
                                     <p>{el.name}</p>
                                     <p>{el.issues}</p>
-                                    <Link to={`/update-part/${el._id}`}><ion-icon name="create-outline"></ion-icon></Link>
+                                    <p><Link to={`/update-part/${el._id}`}><ion-icon name="create-outline"></ion-icon></Link></p>
                                     <p onClick={() => deleteHandler(el._id)}>
                                         <ion-icon name="trash-outline"></ion-icon>
                                     </p>

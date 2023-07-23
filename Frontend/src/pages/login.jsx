@@ -96,7 +96,7 @@ const LogIn = () => {
             </div>
             <div>
                 <label>
-                    Don't have an account ? <Link to="/signup" element={<SignUp/>}>signup</Link> 
+                    Don't have an account ? <Link to="/signup" element={<SignUp/>}>signup</Link> <Link to="/" element={<SignUp/>}>back</Link> 
                 </label>
             </div>
       </form>

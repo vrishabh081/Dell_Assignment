@@ -48,19 +48,6 @@ const UpdateParts = () => {
 
     useEffect(() => {
         dispatch(getSinglePartFun(_id))
-        // if(getSinglePart?.part !== undefined){
-        //     const defaultPartData = {
-        //         name: getSinglePart && getSinglePart?.part?.name,
-        //         specifications: getSinglePart && getSinglePart?.part?.specifications,
-        //         compatibility: getSinglePart && getSinglePart?.part?.compatibility,
-        //         issues: getSinglePart && getSinglePart?.part?.issues,
-        //         instructions: getSinglePart && getSinglePart?.part?.instructions,
-        //         serviceTag: getSinglePart && getSinglePart?.part?.serviceTag,
-        //         modelNumber: getSinglePart && getSinglePart?.part?.modelNumber
-        //     };
-        //     console.log(defaultPartData)
-        //     formik.setValues(defaultPartData)
-        // }
     }, [])
 
     let a = ""
@@ -81,8 +68,6 @@ const UpdateParts = () => {
             })
         }
     });
-
-    console.log(formik.values, _id);
 
     return (
         <>

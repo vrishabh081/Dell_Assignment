@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom'
 import { getSinglePartFun } from '../redux/app/action';
 import Navbar from '../components/navbar';
-import dellParts from "../images/dellLogo.png"
+import dellPartsPic from "../images/dellParts.jpg"
 
 const SinglePagePartInfo = () => {
     // redux-
@@ -31,7 +31,7 @@ const SinglePagePartInfo = () => {
                             getSinglePart ? (
                                 <div key={getSinglePart?.part?._id}>
                                     <Link to={`/partsinfo/${getSinglePart?.part?._id}`}>
-                                        <img src={dellParts} alt={getSinglePart?.part?._id} />
+                                        <img src={dellPartsPic} alt={getSinglePart?.part?._id} />
                                         <div>
                                             <p>{getSinglePart?.part?.name}</p>
                                             <p>{getSinglePart?.part?.modelNumber}</p>

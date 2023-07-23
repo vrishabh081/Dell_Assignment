@@ -12,6 +12,7 @@ const Navbar = () => {
     // log out fun-
     const logOutFun = () => {
         localStorage.clear();
+        alert("Successfully Logout")
         navigate("/login")
     }
 

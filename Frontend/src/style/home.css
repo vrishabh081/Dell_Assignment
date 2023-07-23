@@ -1,6 +1,3 @@
-#main-parts-wrapper{
-    /* border: 1px solid; */
-}
 #main-parts-wrapper>div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,11 +9,12 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 1rem 0 1rem 0;
     padding: 1rem;
+    background-color: white;
 }
 #main-parts-wrapper>div>div img{
     display: block;
     margin: auto;
-    width: 100px;
+    width: 200px;
 }
 #main-parts-wrapper a{
     text-decoration: none;
@@ -33,6 +31,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 1rem;
     border-radius: 1rem 0 1rem 0;
+    background-color: white;
     width: 500px;
     margin: auto;
 }

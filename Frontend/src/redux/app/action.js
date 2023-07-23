@@ -42,7 +42,6 @@ export const addNewPartFun = (payload, user) => (dispatch) => {
 
 // update product-
 export const updatePartFunAdmin = (payload, user, _id) => (dispatch) => {
-    console.log(payload, user, _id)
     dispatch({type: types.UPDATE_PART_REQUEST})
     return axios.patch(`${serverName}/api/v1/part/${_id}`, payload, { headers: {"Authorization" : `${user}`} })
             .then((res)=>{

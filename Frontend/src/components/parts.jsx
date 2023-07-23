@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getPartFun } from '../redux/app/action';
 import dellParts from "../images/dellLogo.png"
+import dellPartsPic from "../images/dellParts.jpg"
 import { Link } from 'react-router-dom';
 
 const Parts = () => {
@@ -25,7 +26,7 @@ const Parts = () => {
                         partsData ? (
                             partsData?.parts.map((el) => <div key={el._id}>
                                 <Link to={`/partsinfo/${el._id}`}>
-                                    <img src={dellParts} alt={el._id} />
+                                    <img src={dellPartsPic} alt={el._id} />
                                     <div>
                                         <p>{el.name}</p>
                                         <p>{el.modelNumber}</p>

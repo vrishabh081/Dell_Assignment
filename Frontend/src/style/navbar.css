@@ -5,6 +5,7 @@
     align-items: center;
     padding: 1rem 0;
     margin-bottom: 2rem;
+    background-color: white;
 }
 #navbar>div:nth-child(2){
     width: 25rem;
@@ -14,6 +15,7 @@
     padding: 0.6rem 0.2rem;
     border-radius: 0.5rem;
     border: 1px solid grey;
+    background-color: rgba(219, 219, 219, 0.646);
 }
 #navbar>div:last-child{
     display: flex;
