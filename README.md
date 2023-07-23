@@ -1,11 +1,12 @@
 <h1>Dell Assignment<h1>
 
 <h1>Description</h1>
-<p>It is a dell assignment where user can authenticate and can see products while admin have all controls of application.</p>
+<p>It is a Dell assignment where the user can authenticate and can see products while the admin has all controls of an application.</p>
 
 <h1>Tech Stacks I have used</h1>
 
 <ul>
+  <li>Vite</li>
   <li>React</li>
   <li>Java Script</li>
   <li>Node.js</li>
